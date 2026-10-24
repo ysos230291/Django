@@ -1,0 +1,43 @@
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #666;    
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+ul li {
+    padding: 50px;    
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 20px;   
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 75vh;
+}
+
+footer {
+    background-color: #666;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}

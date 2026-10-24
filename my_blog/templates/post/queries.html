@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Buscando por id:
+        <p>{{author}}</p>
+    </h3>
+    <h3>Buscando autor por email:</h3>
+    <ul>
+        {% for elm in filtred %}
+        <li>{{elm.name}} | {{elm.email}}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Todos los autores</h3>
+    <ul>
+        {% for author in authors %}
+        <li>{{author.name}} ({{author.email}})</li>
+        {% endfor %} 
+    </ul>
+    <h3>Total de Autores: {{authors|length}}</h3>
+</body>
+</html>
